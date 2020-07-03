@@ -20,3 +20,14 @@ h2{
     font-size: 2em;
     font-family: 'Lucida Sans';
 }
+#button{
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    background:lightseagreen;
+    border:0px;
+    width:200px;
+    height:45px;
+    align-self: center;
+    
+}
