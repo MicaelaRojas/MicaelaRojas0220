@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo02</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color:aqua;
+            font-family:cursive;
+        }
+        p{
+            text-align: center;
+            font-size: 6mm;
+        }
+    </style>
 </head>
 <body>
     <h1>Desarrollo 02</h1>
-    <p><a href="index.html">Regresar a la pagina principal</a></p>
+    <form action="" name="curso">
+        <table border="1" align="center">
+            <tr>
+                <td>Ingrese el número de hijos:</td>
+                <td><input type="number" name="numero" id="numero" required></td>
+            </tr>
+            <tr>
+                <td>Tipo de categoria:</td>
+                <td><input type="text" name="cat" id="cat"></td>
+            </tr>
+            <tr>
+                <td>Tipo de condición laboral:</td>
+                <td><input type="text" name="condicion" id="condicion" placeholder="contratado o nombrado"></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="btn3" value="Limpiar" onclick="limpiar()"></td>
+                <td id="btn2" ><input type="button" name="btn4" value="Ver bonificaciónes" onclick="ver()"></td>
+            </tr>
+            <tr>
+                <td>Bonificación por número de hijos :</td>
+                <td><input type="text" name="bonoHijos" id="bonoHijos" readonly="true"></td>
+            </tr>
+            <tr>
+                <td>Sueldo Bruto :</td>
+                <td><input type="text" name="sbruto" id="sbruto" readonly="true"></td>
+            </tr>
+            <tr>
+                <td>Bonificación por condición laboral :</td>
+                <td><input type="text" name="bonoCond" id="bonoCond" readonly="true"></td>
+            </tr>
+            <tr>
+                <td>Bonificación total :</td>
+                <td><input type="text" name="bonoTotal" id="bonoTotal" readonly="true"></td>
+            </tr>
+        </table>
+    </form>
+            
 </body>
+
+<script src="js/Desarrollo2.js"></script>
+<p><a href="index.html">Regresar a la pagina principal</a></p>
+
 </html>

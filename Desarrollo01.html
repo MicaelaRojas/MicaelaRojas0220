@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo01</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color:aqua;
+            font-family:cursive;
+        }
+        p{
+            text-align: center;
+            font-size: 6mm;
+        }
+        #btn2{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
    <h1>Desarrollo 01</h1>
-   <p><a href="index.html">Regresar a la pagina principal</a></p>
+   
+   <form action="" name="curso">
+    <table border="1" align="center">
+        <tr>
+            <td>Nota:</td>
+            <td><input type="number" name="nota" id="nota" min="0" max="20" pattern="[0-9]" required></td>
+        </tr>
+        <tr>
+            <td>Categoria :</td>
+            <td><input type="text" name="categoria" id="categoria" readonly="true"></td>
+        </tr>
+    </tr>
+    <tr>
+        <td><input type="button" name="btn1" value="Limpiar" onclick="limpiar()"></td>
+        <td id="btn2" ><input type="button" name="btn2" value="Ver categoria" onclick="ver()"></td>
+    </tr>
+   </table>
+  </form>
 </body>
+<script src="js/Desarrollo1.js"></script>
+<p><a href="index.html">Regresar a la pagina principal</a></p>
 </html>

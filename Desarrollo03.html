@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo03</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color:aqua;
+            font-family:cursive;
+        }
+        p{
+            text-align: center;
+            font-size: 6mm;
+        }
+    </style>
 </head>
 <body>
     <h1>Desarrollo 03</h1>
-    <p><a href="index.html">Regresar a la pagina principal</a></p>
+    <form action="" name="curso">
+        <table border="1" align="center">
+            <tr>
+                <td>Importe total vendido</td>
+                <td><input type="number" name="impTotalVendido" id="impTotalVendido"  required></td>
+            </tr>
+            <tr>
+                <td>Cantidad de hijos en edad escolar</td>
+                <td><input type="number" name="hijos" id="hijos" required></td>
+            </tr>
+            <tr>
+                <td><input type="button" name="btn1" value="Limpiar" onclick="limpiar()"></td>
+                <td><input type="button" name="btn2" value="Calcular" onclick="calcular()"></td>
+            </tr>
+            <tr>
+                <td>Comision</td>
+                <td><input type="text" name="comision" id="comision" readonly="true"></td>
+            </tr>
+            <tr>
+                <td>Bonificacion</td>
+                <td><input type="text" name="bonificacion" id="bonificacion" readonly="true"></td>
+            </tr>
+            <tr>
+                <td>Sueldo Bruto</td>
+                <td><input type="text" name="sbruto" id="sbruto" readonly="true"></td>
+            </tr>
+            <tr>
+                <td>Descuento</td>
+                <td><input type="text" name="sdescuento" id="sdescuento" readonly="true"></td>
+            </tr>
+            <tr>
+                <td>sueldo neto</td>
+                <td><input type="text" name="sneto" id="sneto" readonly="true"></td>
+            </tr>
+            
+        </table>
+    </form>
 </body>
+<script src="js/Desarrollo3.js"></script>
+<p><a href="index.html">Regresar a la pagina principal</a></p>
 </html>
